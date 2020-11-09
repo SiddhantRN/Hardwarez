@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 
+import colors from "../config/colors";
 import AccountNavigator from "./AccountNavigator";
 import FeedNavigator from "./FeedNavigator";
 import AddListingScreen from "../screens/AddListingScreen";
@@ -26,6 +27,7 @@ const AppNavigator = () => {
   return (
     <Tab.Navigator
       tabBarOptions={{
+        activeTintColor: colors.primary,
         showLabel: false,
         keyboardHidesTabBar: true,
         tabStyle: { alignItems: "center" },
